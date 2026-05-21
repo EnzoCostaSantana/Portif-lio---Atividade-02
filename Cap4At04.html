@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos Multimídia - Cap. 4 / Ativ. 4</title>
+</head>
+<body>
+
+    <header>
+        <h1>Página de Recursos Multimídia</h1>
+    </header>
+
+    <main>
+
+        <figure>
+            <video controls width="800" height="450" poster="poster-aula.jpg" preload="metadata">
+                <source src="video-aula.mp4" type="video/mp4">
+                <source src="video-aula.webm" type="video/webm">
+                <track kind="subtitles" srclang="pt" label="Português" src="aula-html.vtt" default>
+                <p>Seu navegador não suporta vídeos. <a href="video-aula.mp4">Baixe o vídeo aqui</a>.</p>
+            </video>
+            <figcaption>Vídeo explicativo sobre elementos semânticos HTML5. Fonte: Canal Educacional.</figcaption>
+        </figure>
+
+        <figure>
+            <audio controls preload="metadata">
+                <source src="episodio.mp3" type="audio/mpeg">
+                <source src="episodio.ogg" type="audio/ogg">
+                <p>Seu navegador não suporta áudio. <a href="episodio.mp3">Clique aqui para baixar o episódio</a>.</p>
+            </audio>
+            <figcaption>Episódio 01: A evolução da Web. <a href="transcricao.html">Acesse a transcrição aqui</a>.</figcaption>
+        </figure>
+
+        <figure>
+            <iframe width="800" height="450" 
+                    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                    title="Vídeo educacional sobre HTML5" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen 
+                    loading="lazy">
+            </iframe>
+            <figcaption>Vídeo: Introdução ao HTML5. Canal: WebDev Experts (Plataforma YouTube).</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/banner-wide.jpg">
+                <img src="img/banner-mobile.jpg" alt="Banner ilustrativo de tecnologias web" width="800" height="300">
+            </picture>
+            <figcaption>Banner principal da página adaptado para diferentes dispositivos.</figcaption>
+        </figure>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Enzo Costa Santana | Matrícula: 2026303858 | Data: 21/05/2026</p>
+    </footer>
+
+</body>
+</html>
