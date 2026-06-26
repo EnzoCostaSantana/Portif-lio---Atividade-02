@@ -1,0 +1,205 @@
+/* =====================================================================
+   atv01.css  —  ARQUIVO DE TRABALHO DA ATIVIDADE
+   ---------------------------------------------------------------------
+   Este CSS é funcional, porém deliberadamente básico:
+     - usa apenas seletores de tipo, de classe e de id;
+     - expressa TODAS as medidas em pixels (px);
+     - contém repetição de regras.
+   Sua tarefa é refatorá-lo conforme o enunciado, sem alterar o HTML.
+   ===================================================================== */
+
+/* ---------- Base ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a:before {
+  content: "> ";
+  color: aqua;
+}
+
+.menu > a {
+  color: green;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 2rem; /*32px*/
+  max-width: 80%; /*960px*/
+}
+
+h2 {
+  color: #1565c0;
+  font-size: 1.5rem;
+}
+
+h2 + p {
+  margin-left: 1.1em
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.destaque {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+/*.destaque ~ p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #119911;
+}*/
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 80vw; /*280px*/
+  vertical-align: top;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.cartao:nth-child(even) {
+  background-color: lightblue
+}
+
+.cartao:nth-child(odd) {
+  background-color: aquamarine
+}
+
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+
+.botao:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Lista de programação ---------- */
+.lista-dias > li {
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+.lista-dias > li:first-child {
+  color: midnightblue
+}
+
+.lista-dias > li:last-child {
+  color: darkblue;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 30vw; /*480px*/
+}
+
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+label:not(:last-of-type)::after {
+  content: "*";
+  color: lightcoral;
+}
+
+input, textarea {
+  display: block;
+  width: 320px;
+  font-size: 1rem;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #999999;
+}
+
+
+input:focus, textarea:focus {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+input[type="email"] {
+  border: 1px dashed #223399;
+}
+
+input[type="password"] {
+  border: 1px solid #993399;
+}
+
+
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 1.5em;
+  font-size: 1.125rem;
+}
