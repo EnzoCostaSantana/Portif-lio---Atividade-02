@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pagina Pessoal</title>
-    </head>
-    <body>
-        <header>
-            <h1>Enzo Costa Santana</h1>
-            <h2>Estudante do 1 ano do ensino médio integrado no curso de Desenvolvimento de Sistemas, turma 911C</h2>
-            <a href="https://www2.ifal.edu.br/"><img src="Foto Pessoal.jpeg" height="400" width="300"></a>
-        </header>
-            <h3>Data de Nascimento: 15/04/2011</h3>
-            <p><i>Eu gosto de aprender coisas novas, ler, jogar, e quero me tornar um desenvolvedor, para isso eu pretendo me esforçar bastante.</i></p>
-            <p><b>Conhecimentos na area do curso:</b></p>
-            <Ul>
-                <li>Java Script básico</li>
-                <li>Word básico</li>
-                <li>HTML básico</li>
-            </Ul>
-            <p>No curso de Desenvolvimento de Sistemas você aprende a criar algoritmos para resolver problemas, sites, jogos, etc utilizando as mais diversas linguagens. </p>
-            <a href="https://www2.ifal.edu.br/campus/maceio/ensino/cursos/tecnicos-integrados/desenvolvimento-de-sistemas" target="_blank"> Saiba mais sobre o nosso curso</a>
 
+<html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal — Enzo Costa Santana</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <div class="pagina">
+
+    <!-- ====== CABEÇALHO ====== -->
+    <header class="cabecalho">
+      <h1>Enzo Costa Santana</h1>
+      <p>Estudante do 1° ano do ensino médio integrado no curso de Desenvolvimento de Sistemas, turma 911C</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Atividades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="principal">
+      <section id="sobre" class="cartao">
+        <h2>Sobre mim</h2>
+        <!-- TROQUE por uma breve apresentação sua -->
+        <p>Eu gosto de aprender coisas novas, ler, jogar, e quero me tornar um desenvolvedor, para isso eu pretendo me esforçar bastante.</p>
+      </section>
+
+      <section id="projetos" class="cartao">
+        <h2>Atividades</h2>
+        <div class="projetos">
+          <article class="projeto">
+            <h3>Capítulo 4 — Tabelas, Listas e Mídia</h3>     
         <nav aria-label="Atividades do Capítulo 4">
-  <h2>Capítulo 4 — Tabelas, Listas e Mídia</h2>
   <ul>
     <li>
       <a href="Atividade1.html">
@@ -46,9 +60,11 @@
     </li>
   </ul>
 </nav>
-
+          </article>
+          <article class="projeto">
+            <h3>Capítulo 5 — Formulários HTML</h3>
+            
         <section>﻿  
-            <h2>Capítulo 5 — Formulários HTML</h2>﻿
             <nav>﻿ 
                 <ul>
                     <li><a href="Cap05At01.html">AT01 — Formulário de Contato</a></li>﻿ 
@@ -59,16 +75,46 @@
                 </ul>﻿  
             </nav>﻿ 
          </section>
-
+          </article>
+          <article class="projeto">
+            <h3>Capítulo 7 — CSS</h3>
+            
         <section>﻿  
-            <h2>Capítulo 7 — CSS</h2>﻿
             <nav>﻿ 
                 <ul>
                     <li><a href="At01CSS.html">AT01 — Atividade em Dupla</a></li>﻿
                     <li><a href="At02CSS.html">AT02 - CSS</a></li>
                 </ul>﻿  
-            </nav>﻿ 
-        </section>
-    </body>
+            </nav>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="lateral">
+      <section class="cartao">
+        <h2>Habilidades</h2>
+        <ul class="habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Word Básico</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="cartao">
+        <h2>Contato</h2>
+        <ul class="contato">
+          <li>Email: <a href="mailto:enzocostasantana1504@gmail.com">enzocostasantana1504@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/EnzoCostaSantana">github.com/EnzoCostaSantana</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer class="rodape">© 2026 Enzo Costa Santana · feito com HTML + CSS Grid</footer>
+
+  </div>
+</body>
 
 </html>
